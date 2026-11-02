@@ -114,7 +114,8 @@ section{padding:clamp(4rem,9vw,7rem) 0}
 .gallery{background:var(--bark);color:var(--stone)}
 .gallery .eyebrow{color:#f2c08f}
 .gallery .lede{color:#d9cbb8}
-.g-grid{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:240px 240px;gap:1rem;margin-top:2.4rem}
+.g-grid{display:grid;grid-template-columns:2fr 1fr 1fr;grid-auto-rows:240px;gap:1rem;margin-top:2.4rem}
+.g-note{margin-top:1.4rem;color:#f2c08f;font-weight:600}
 .g-grid figure{margin:0;border-radius:14px;overflow:hidden;position:relative;background:#2a1e16}
 .g-grid figure img{width:100%;height:100%;object-fit:cover}
 .g-grid figure.tall{grid-row:span 2}
@@ -168,7 +169,7 @@ footer a{color:#f2c08f}
   .steps{grid-template-columns:1fr 1fr}
   .svc-grid{grid-template-columns:1fr 1fr}
   .kit,.craft-grid,.about-grid,.area-grid,.contact-grid{grid-template-columns:1fr}
-  .g-grid{grid-template-columns:1fr 1fr;grid-template-rows:200px 200px 200px}
+  .g-grid{grid-template-columns:1fr 1fr;grid-auto-rows:200px}
   .g-grid figure.tall{grid-row:span 1;grid-column:span 2}
   .top nav ul li:not(.keep){display:none}
 }
