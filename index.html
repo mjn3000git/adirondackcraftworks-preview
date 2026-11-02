@@ -270,17 +270,16 @@
         <li><span>Based in</span><b>Schroon Lake, New York</b></li>
       </ul>
     </div>
-    <!-- Preview: form is disabled. To go live, set action to https://formspree.io/f/FORM_ID (delivers to email@adirondackcraftworks.com) and remove disabled. -->
-    <form action="#" method="post" onsubmit="return false" aria-label="Inquiry form (disabled in preview)">
+    <form action="https://formspree.io/f/maeeenav" method="POST" accept-charset="UTF-8" aria-label="Inquiry form">
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
       <div class="row">
-        <div><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" disabled></div>
-        <div><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" disabled></div>
+        <div><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required></div>
+        <div><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
       </div>
       <div><label for="f-topic">I'm interested in</label>
-        <select id="f-topic" name="topic" disabled><option>Home Watch</option><option>Home services or repairs</option><option>Custom sign</option><option>Furniture</option><option>Something else</option></select></div>
-      <div><label for="f-msg">Message</label><textarea id="f-msg" name="message" disabled></textarea></div>
-      <button type="submit" disabled>Send inquiry</button>
-      <p class="form-note">Form is turned off in this preview. Nothing is sent.</p>
+        <select id="f-topic" name="topic"><option>Home Watch</option><option>Home services or repairs</option><option>Custom sign</option><option>Furniture</option><option>Something else</option></select></div>
+      <div><label for="f-msg">Message</label><textarea id="f-msg" name="message" required></textarea></div>
+      <button type="submit">Send inquiry</button>
     </form>
   </div>
 </section>
